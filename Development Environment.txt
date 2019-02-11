@@ -1,0 +1,46 @@
+1. Install VS 2015
+
+2. Install CUDA and CuDNN 
+
+(https://www.quantinsti.com/blog/install-tensorflow-gpu)
+
+3. Install the latest version of Anaconda 
+(https://www.anaconda.com/distribution/#download-section)
+
+4. install Python 3.6.8 in the root environment with following on anaconda prompt 
+
+conda install python=3.6.8
+
+5. Create a virtual environment using virtualenv 
+
+pip install virtualenv
+
+virtualenv directory_name
+
+6. Activate virtual environment
+
+cd C:\Users\HICT\ML_Study
+Scripts\activate
+
+7. install tensorflow-gpu (1.12.0)
+
+conda install tensorflow-gpu
+
+8. install tornado and jupyter-tensorboard
+
+conda install jupyter-tensorboard
+
+9. install other packages needed
+
+pip install matplotlib
+
+pip install keras
+
+10. Check if tensorflow is using GPU as below:
+
+import tensorflow as tf
+if tf.test.gpu_device_name():
+    print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
+else:
+    print("Please install GPU version of TF")
+
